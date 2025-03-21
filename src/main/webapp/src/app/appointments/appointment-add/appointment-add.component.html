@@ -1,0 +1,11 @@
+<div class="submit-form">
+  <div class="form-group">
+    <label>Purpose:</label>
+    <input class="form-control" type="text" [(ngModel)]="appointment.purpose">
+
+    <label>Appointment Date & Time:</label>
+    <input class="form-control" type="datetime-local" [(ngModel)]="appointment.appointmentDateTime">
+
+    <button class="btn btn-success mt-3" (click)="saveAppointment()">Submit</button>
+  </div>
+</div>
